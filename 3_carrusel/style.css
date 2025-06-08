@@ -1,0 +1,111 @@
+:root
+{
+    background-color: #f1f5f8;
+    margin: 0 auto;
+    font-family: "Lato", sans-serif;
+}
+
+.container
+{
+    font-family: "Lato", sans-serif;
+    margin: 0 auto;
+    max-width: 480px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+h1
+{
+    color: #102B42;
+    font-weight: 900;
+    text-align: center;
+}
+
+.image-container
+{
+    position: relative;
+    background-color: #49A6EA;
+    border-radius: 50%;
+    transform: translateX(10px);
+}
+
+img
+{
+    border-radius: 50%;
+    position: relative;
+    transform: translateX(-7px) translateY(3px);
+}
+
+#nombre
+{
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #102B42;
+}
+
+#profesion
+{
+    color: #49A6EA;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#descripcion-cargo
+{
+    text-align: center;
+    color: #102b42a2;
+}
+
+span
+{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #49A6EA;
+    color: white;
+    font-size: 35px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.buttons-container
+{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+button
+{
+    border-style: none;
+    background-color: transparent;
+    color: #49A6EA;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+button:hover
+{
+    cursor: pointer;
+    background-color: #49A6EA;
+    color: #f1f5f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+button:active
+{
+    transform: translateY(2px);
+}

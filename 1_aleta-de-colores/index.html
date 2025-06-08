@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aleta de colores</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="container">
+        <h1>Aleta de colores</h1>
+        <h3>Como funciona...</h3>
+        <p>Creamos una variable para la base del color hex:</p>
+        <pre><code>const hexCodeBase = ['A', 'B', 'C', 'D', 'E', 'F', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];</code></pre>
+        <p>Creamos una funcion que almacena aleatoriamente en un array, 6 de los elementos contenidos en hexCodeBase
+            usando un bucle while, convertimos el array a string y concatenamos con un '#', luego manipulando el DOM com
+            el ID del elemento HTML inyectamos el valor como estilo del elemento (background-color)</p>
+        <pre>
+                <code>
+                    function handleColorChange() {
+	                    let hexColorArr = [];
+
+	                    while (hexColorArr.length <= 5) {
+		                    hexColorArr.push(
+			                hexCodeBase[Math.floor(Math.random() * hexCodeBase.length)]
+		                    );
+	                    }       
+
+	                    const hexColor = '#' + hexColorArr.join('');
+
+	                    const containerColor = document.getElementById('container');
+	                    containerColor.style.backgroundColor = hexColor;
+                    }
+                </code>
+            </pre>
+
+        <button id="cambia-color" onclick="handleColorChange()">Cambia mi color</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

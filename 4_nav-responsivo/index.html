@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra de navegacion responsiva</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="content-container">
+            <div class="nav-responsive">
+                <h1>LOGO</h1>
+                <button id="show-menu-btn" class="btn-togle" onclick="showMenu()">
+                    ☰
+                </button>
+            </div>
+            <nav>
+                <ul id="menu-list">
+                    <li onclick="hideMenu()"><button class="hide-btn">X</button></li>
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Products</li>
+                    <li>Contact</li>
+                    <li>My account</li>
+
+                </ul>
+            </nav>
+
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

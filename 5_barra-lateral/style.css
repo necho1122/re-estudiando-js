@@ -12,9 +12,13 @@ body
 
 .container
 {
+    margin: 0 auto;
     width: 100%;
-    height: 83px;
+    height: 100vh;
     background-color: #fff;
+    position: relative;
+    max-width: 1200px;
+    overflow: hidden;
 }
 
 .nav-responsive
@@ -28,17 +32,13 @@ body
 
 .content-container
 {
-    margin: 0 auto;
-    max-width: 1200px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: none;
 }
 
 ul
 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 20px;
     padding: 20px;
 }
@@ -47,28 +47,35 @@ li
 {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
     list-style: none;
 
 }
 
-.btn-togle
+@keyframes slideIn
 {
-    display: none;
+    0%
+    {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    100%
+    {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .activo.menu-list
 {
+    position: static;
+    max-width: 400px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #1E1E1E;
-    color: #EDEDED;
-    position: relative;
-    z-index: 1;
-    margin: 0;
+    background-color: #a3b2f3;
+    animation: slideIn 0.7s ease forwards;
 }
 
 button
@@ -82,6 +89,8 @@ button
 .btn-togle
 {
     font-size: 25px;
+    position: absolute;
+    right: 1rem;
 }
 
 .btn-togle:hover
@@ -90,38 +99,18 @@ button
     transition: 0.5s;
 }
 
-.btn-hide.bton-disable
-{
-    display: none;
-}
-
 .hide-btn
 {
-    display: none;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(160, 25, 25);
+}
+
+.hide-btn:hover
+{
+    transform: rotate(180deg);
+    transition: 0.5s;
 }
 
 @media (max-width: 680px)
-{
-    .btn-togle
-    {
-        display: block;
-    }
-
-    ul
-    {
-        display: none;
-    }
-
-    .content-container
-    {
-        flex-direction: column;
-    }
-
-    .hide-btn
-    {
-        display: block;
-        font-size: 20px;
-        font-weight: bold;
-        color: #fff;
-    }
-}
+{}

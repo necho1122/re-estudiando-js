@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-content">
+            <h1>Modal Project</h1>
+            <button onclick="showModal()">Open modal</button>
+        </div>
+    </div>
+    <div id="modal-container" class="modal-hiden">
+        <div class="modal-content">
+            <button class="close-btn" onclick="hideModal()">X</button>
+            <div id="modal">
+                <h3>This is a modal</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero veritatis ea, soluta eos dolor quis
+                    dolores iste quam odit eum, ad rem omnis corrupti. Laudantium dicta hic doloribus beatae numquam!
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+:root
+{
+    background-color: #1a1a1a;
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container
+{
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul
+{
+    display: flex;
+    gap: 2rem;
+}
+
+li
+{
+    list-style: none;
+}
+
+li:hover
+{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.section-card
+{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#top-btn
+{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    border-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 50%;
+    padding: 0.5rem 1rem;
+}
+
+#top-btn:hover
+{
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
